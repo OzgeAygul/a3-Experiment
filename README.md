@@ -29,8 +29,9 @@ The chart below shows log errors of 20 pie charts along with the bootstraped con
 * Then participants are asked to compare marked slices.
 * After collecting data, accuracy is calculated using the formula below:
   ![image](https://github.com/OzgeAygul/a3-Experiment/assets/77694285/bc0c3c73-f670-40f6-9038-a8edb168cb6b)
-* Then error bars are bootstrapped 95% confidence intervals, and sorted from best to worst estimations. 
-
+* Then error bars are bootstrapped with 95% confidence intervals, and sorted from best to worst estimations. 
+* Chart 8 seems to perform on average, and can be used to compare with bar chart and tree map.
+  
 
 Bar Chart
 ===
