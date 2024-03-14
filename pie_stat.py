@@ -63,3 +63,30 @@ plt.yticks(y_positions)
 # Show grid and plot
 plt.grid(True, linestyle='--', linewidth=0.5)
 plt.show()
+
+##
+indexed_errors = list(enumerate(average_errors))
+# Sort by average errors
+sorted_indexed_errors = sorted(indexed_errors, key=lambda x: x[1])
+
+# Sort the average errors and the corresponding confidence intervals
+sorted_indices = [index for index, error in sorted_indexed_errors]
+sorted_average_errors = np.array([error for index, error in sorted_indexed_errors])
+sorted_error_bars = [sorted_average_errors - ci_lowers[sorted_indices],
+                     ci_uppers[sorted_indices] - sorted_average_errors]
+
+# Generate new y-positions based on the sorted order
+sorted_y_positions = np.arange(len(sorted_average_errors))
+
+# Plot error bars for each visualization, sorted from best to worst
+plt.errorbar(sorted_average_errors, sorted_y_positions, xerr=sorted_error_bars, fmt='o', color='black', capsize=5)
+
+# Labels and title
+plt.ylabel('Visualization Number (Sorted)')
+plt.xlabel('Average log2Error')
+plt.title('Sorted Average log2Error with 95% Bootstrapped Confidence Intervals')
+plt.yticks(sorted_y_positions, labels=[f'Vis. {i+1}' for i in sorted_indices])  # Use the original indices as labels
+# Show grid and plot
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.gca().invert_yaxis()  # Optionally invert y-axis so that the best (lowest error) is at the top
+plt.show()
