@@ -25,7 +25,11 @@ The chart below shows log errors of 20 pie charts along with the bootstraped con
 
 
 * The reason that leads to this can be 1) **Position**: When marked slices are adjacent to each other, it could be easier to judge. 2) **Number of data points**: When the number of data points is higher, it may be harder to judge. 3) **Difference**: When there is a significant difference, it is easier to compare.
-  
+* For this experiment, the number of slices is randomly generated between 5 and 10, and 2 of them are randomly marked.
+* Then participants are asked to compare marked slices.
+* After collecting data, accuracy is calculated using the formula below:
+  ![image](https://github.com/OzgeAygul/a3-Experiment/assets/77694285/bc0c3c73-f670-40f6-9038-a8edb168cb6b)
+* Then error bars are bootstrapped 95% confidence intervals, and sorted from best to worst estimations. 
 
 
 Bar Chart
