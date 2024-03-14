@@ -9,7 +9,8 @@ For our experiment, we asked participants to compare **bar charts**, **pie chart
 Pie Chart
 ===
 The chart below shows log errors of 20 pie charts along with the bootstraped confidence intervals.
-![image](https://github.com/OzgeAygul/a3-Experiment/assets/77694285/63606e13-3390-4c79-aa56-af9f3aae9c5c)
+![image](https://github.com/OzgeAygul/a3-Experiment/assets/77694285/4e33d2fa-6c6f-47cb-8b24-a4451dd5e6a6)
+
 * The first thing you might realize is that error bars are not symmetric. When data is not normally distributed, the confidence intervals might naturally be asymmetric. The bootstrap method, which is robust to non-normal distributions, can yield asymmetric confidence intervals that are a more accurate representation of the uncertainty in the estimate.
 
 * There is a great variance between charts, for example, charts 8 (having the most accurate estimations) and 12 (having the worst estimations). You can see all the pie charts in the folder.
