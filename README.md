@@ -31,7 +31,7 @@ Bar Chart
 The chart below shows log errors of 20 bar charts.
 ![alt text](Bar_Logerror-1.png)
 
-There's also a huge variance between these charts, chart 7 has the worst estimations.
+There's also a huge variance between these charts, chart 7 has the best estimations.
 
 **Chart 7** 
 
