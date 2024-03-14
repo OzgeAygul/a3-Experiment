@@ -45,8 +45,8 @@ Tree Map
 Technical Achievements
 ===
 * Data is randomly generated and 2 points are randomly marked.
-* Make a error plots with caculating Log error.
-=======
+* Make error plots with calculating Log error.
+
 
 
 Design Achievements
